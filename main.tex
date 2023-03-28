@@ -1,0 +1,286 @@
+%-------------------------
+% Resume in Latex
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate PDF is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+
+%----------HEADING----------
+
+\begin{center}
+  \textbf{\Huge \scshape Saketh Pabolu} \\ \vspace{1pt}
+  \href{mailto:spabolu2@asu.edu}{{spabolu2@asu.edu}} $|$
+  \href{https://sakethpabolu.com}{sakethpabolu.com} $|$
+  \href{https://github.com/spabolu}{github.com/spabolu} $|$
+  \href{https://linkedin.com/in/spabolu}{linkedin.com/in/spabolu}
+
+\end{center}
+
+%-----------EDUCATION-----------
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Arizona State University}{Tempe, AZ}
+{Bachelor of Science in Computer Science; Minor in Data Science}{Aug 2021 -- May 2025}
+{\scriptsize{ \footnotesize{\newline{}\textbf{Relevant Coursework:} OOP \& Data Struct., Intro to Software Engr., Assembly Lang Prog., Discrete Math Struct.}}}
+{\scriptsize{ \footnotesize{\newline{}\textbf{Recognition:} Dean's List, Next Generation Service Corps, Medallion Scholarship}}}
+
+\resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+        \textbf{Technical Languages}{: JavaScript, Python, Java, C, C++, Swift, SQL, HTML, CSS, Bash} \\
+        \textbf{Libraries, Platforms \& Tools}{: NodeJS, React, Numpy, Scikit, Raspberry Pi, Astah, Docker, Axios, AWS, Git} \\
+        \textbf{Clubs \& Orgs}{: Python Users Group, Software Developers Assoc., ML Club, EPICS, Grand Challenges Scholar} \\
+        }}
+\end{itemize}
+%-------------------------------------------
+
+%-----------EXPERIENCE-----------
+\section{Professional Experience}
+\resumeSubHeadingListStart
+
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------}}
+
+\resumeSubheading
+{SolarSPELL}{Tempe, AZ}
+{Off-Grid Raspberry Pi Optimizer Intern}{Jan 2022 -- Apr 2022}
+\resumeItemListStart
+\resumeItem{Conducted research on the Raspberry Pi Wi-Fi module preventing from allowing concurrent connections}
+\resumeItem{Prepared a presentation with my findings on increasing the concurrent connections to the system by 200\%}
+\resumeItem{Modified the system packages to a stable iteration of Raspbian OS where devices could jointly access Pi's hotspot}
+\resumeItemListEnd
+
+\resumeSubheading
+{Stardust Building - EPICS at ASU}{Tempe, AZ}
+{Prototyping Lead}{Jan 2022 -- May 2022}
+\resumeItemListStart
+\resumeItem{Researched the current state of solar panel industry and process of recycling solar panel in Arizona}
+\resumeItem{Analyzed a budget-friendly solar panel testing platform to standardize output efficacy on decommissioned panels}
+\resumeItem{Actively collaborated with one of the board of directors of Stardust to finalize the prototype}
+\resumeItemListEnd
+
+% \resumeSubheading
+% {Extended Reality (XR) Creative Developer}{May 2021 -- Aug 2021}
+% {Learning Futures Collaboratory}{Tempe, AZ}
+% \resumeItemListStart
+% \resumeItem{Built prototypical immersive XR platform for classroom learning environments using Adobe XR}
+% \resumeItem{Created cross-platform UI elements for a 3D model of ASU campuses using Adobe XD}
+% \resumeItem{Upskilled with the UI/UX guild and critiqued LFC's simulation websites using their design framework}
+% \resumeItemListEnd
+
+\resumeSubheading
+{Fulton Schools of Engineering}{Remote}
+{Web Security Intern}{Jun 2021 -- Jul 2021}
+\resumeItemListStart
+\resumeItem{Answered the question ``What happens when you type google.com into your browser and press enter?"}
+\resumeItem{Researched how the browser extensions work and browser fingerprinting happens in the background}
+\resumeItem{Designed and implemented a program that fingerprints the browser extensions based on DOM changes}
+\resumeItemListEnd
+
+\resumeSubheading
+{CodeLabs by CodeDay}{Remote}
+{Web Development Intern}{Jul 2020}
+\resumeItemListStart
+\resumeItem{Brainstormed a plan of action to execute a coherent UI/UX design process}
+\resumeItem{Contributed several components, on Angular framework, of the website to an established repository}
+\resumeItem{Presented virtually to the CodeLabs conference highlighting the prototype and its real-world implications}
+\resumeItemListEnd
+
+\resumeSubheading
+{Chandler Police Department}{Chandler, AZ}
+{Computer Security Intern}{Jun 2019 -- Jul 2019}
+\resumeItemListStart
+\resumeItem{Placed in a business atmosphere and displayed maturity in systems administration}
+\resumeItem{Contributed to the mentor's work and accountable for network security checks}
+\resumeItem{Maintained amenable character and adapted to different technologies based on the vulnerabilities in the system}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+%-----------RELEVANT PROJECTS-----------
+\section{Relevant Projects}
+\resumeSubHeadingListStart
+
+% \resumeProjectHeading
+% {\textbf{Headcount} $|$ \emph{Python, Raspberry Pi, OpenCV, Pi Camera Module}}{}
+% \resumeItemListStart
+% \resumeItem{Implemented an open-source system on Raspberry Pi 4 to track real-time room occupancy of people at events}
+% \resumeItem{Adhered to privacy of the attendees by creating a blackbox-like system and not storing sensitive data}
+% \resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Courseer} $|$ \emph{React.js, Firebase, Stripe, Node}}{}
+\resumeItemListStart
+\resumeItem{Developed a full-stack React website with 100+ users, aiding students in enrolling in desired classes}
+\resumeItem{Established a server-side system for tracking class availability, ensuring prompt text notifications}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{AWS Seamless Authentication} $|$ \emph{DynamoDB, Lambda, Axios, Node}}{}
+\resumeItemListStart
+\resumeItem{Implemented the front-end with JavaScript and utilized camera library to allow users to scan their event passes}
+\resumeItem{Connected the backend API gateway by sending POST requests using Axios Promise based HTTP client}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+% %-----------ACTIVITIES-----------
+% \section{Activities}
+% \resumeSubHeadingListStart
+
+% \resumeProjectHeading
+% {\textbf{Python Users Group (PUG)} $|$ Technical Officer}{Spring 2020}
+% \resumeItemListStart
+% \resumeItem{Designed and developed the front-end using JavaScript and also utilized Leaflet library to render interactive maps}
+% \resumeItem{Programmed the GPS system by using the browser location prompt and pinpointing the results into a map}
+% \resumeItemListEnd
+
+% \resumeProjectHeading
+% {\textbf{Software Developers Association (SoDA)} $|$ Member}{Spring 2020}
+% \resumeItemListStart
+% \resumeItem{Designed and developed the front-end using JavaScript and also utilized Leaflet library to render interactive maps}
+% \resumeItem{Programmed the GPS system by using the browser location prompt and pinpointing the results into a map}
+% \resumeItemListEnd
+
+% \resumeProjectHeading
+% {\textbf{Machine Learning Club} $|$ Member}{Spring 2020}
+% \resumeItemListStart
+% \resumeItem{Designed and developed the front-end using JavaScript and also utilized Leaflet library to render interactive maps}
+% \resumeItem{Programmed the GPS system by using the browser location prompt and pinpointing the results into a map}
+% \resumeItemListEnd
+
+% \resumeSubHeadingListEnd
+
+%-----------OTHER WORK EXPERIENCE-----------
+\section{Other Work Experience}
+\resumeSubHeadingListStart
+
+% % -----------Multiple Positions Heading-----------
+% %    \resumeSubSubheading
+% %     {Software Engineer I}{Oct 2014 - Sep 2016}
+% %     \resumeItemListStart
+% %        \resumeItem{Apache Beam}
+% %          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+% %     \resumeItemListEnd
+% %    \resumeSubHeadingListEnd
+% %-------------------------------------------}}
+
+\resumeSubheading
+{Arizona State University}{Tempe, AZ}
+{Sun Devil Sparky Mascot}{Oct 2021 -- May 2022}
+\resumeItemListStart
+\resumeItem{Conveyed ASU's enthusiasm and spirit in engineering to audience taking special care with children, and VIPs}
+\resumeItem{Kept optimal physical conditioning to handle long periods of standing and wearing heavy, hot consuming pieces}
+\resumeItemListEnd
+
+% \resumeSubheading
+% {Code Sensei (Instructor)}{Oct 2019 -- Aug 2021}
+% {Code Ninjas}{Phoenix, AZ}
+% \resumeItemListStart
+% \resumeItem{Mentored children from ages 7 to 14 with granted curriculum on JavaScript, Python, Scratch}
+% \resumeItem{Established a fun and safe learning environment for students when collaborating in group activities}
+% \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\end{document}
+
